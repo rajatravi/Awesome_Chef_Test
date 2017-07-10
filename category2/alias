@@ -1,1 +1,0 @@
-alias cpu=top | head -12 | tail -5 | awk '{print $9}' | sort -r

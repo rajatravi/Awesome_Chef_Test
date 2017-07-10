@@ -1,3 +1,6 @@
+describe sshd_config ('/etc/ssh/sshd_config') do
+  its ('PasswordAuthentication') {should eq 'no' }
+end
 bash 'generate_SSH_Key' do  
 code <<- SSH  
  sh-keygen -t rsa 
